@@ -9,4 +9,4 @@ For any questions or suggestions, feel free to:
 
 * [Send me a mail](mailto:thesoulbiz@gmail.com)
 
-* [Call me](tel:+34635587394)
+* [Call me](tel:+00000000000)
