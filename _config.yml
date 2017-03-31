@@ -1,0 +1,31 @@
+# Site Settings
+title:               TheSoulbiz
+tagline:             Personal blog & workspace
+description:
+baseurl:            #"/Lagrange"
+url:                #"https://lenpaul.github.io"
+github:
+  url:               #"https://lenpaul.github.io/Lagrange"
+author:
+  name:              "Omar Asensio"
+  email:             "thesoulbiz@gmail.com"
+  twitter:           "linux"
+  instagram:         "soulbiz"
+  github:            "soulbiz"
+  linkedin:          "omar-asensio-romeu-0251566a"
+navigation:
+- title: About
+  url: /about
+- title: Posts
+  url: /writing
+- title: Contact
+  url: /contact
+
+paginate:            5
+disqus:              #"your-disqus"
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+gems:                [jekyll-paginate]
