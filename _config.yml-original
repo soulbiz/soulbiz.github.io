@@ -2,10 +2,10 @@
 title:               TheSoulbiz
 tagline:             Personal blog & workspace
 description:
-baseurl:            "/"
-url:                "https://soulbiz.github.io"
+baseurl:            #"/Lagrange"
+url:                #"https://lenpau.github.io"
 github:
-  url:               "https://soulbiz.github.io/"
+  url:               #"https://lenpau.github.io/Lagrange"
 author:
   name:              "Omar Asensio"
   email:             "thesoulbiz@gmail.com"
