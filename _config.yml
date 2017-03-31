@@ -5,7 +5,7 @@ description:
 baseurl:            "/"
 url:                "https://soulbiz.github.io"
 github:
-  url:               "https://soulbiz.github.io/"
+  url:               "https://soulbiz.github.io"
 author:
   name:              "Omar Asensio"
   email:             "thesoulbiz@gmail.com"
