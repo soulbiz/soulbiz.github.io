@@ -5,9 +5,8 @@
 body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-size: 18px;
-  color: darkslategray;/*#515151;/*#3A3A3A;/*rgba(0,0,0,.8);/*#666;*/
+  color: #515151;/*#3A3A3A;/*rgba(0,0,0,.8);/*#666;*/
   line-height: 1.75rem;
-  background-color: azure;
 }
 
 @media (max-width: 30em) {
@@ -20,6 +19,9 @@ body {
   }
 }
 
+h1{
+  font-size: 2rem;
+}
 
 h1 a {
   text-decoration: none;
@@ -27,18 +29,13 @@ h1 a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Quattrocento Sans", sans-serif;
-  color: #555;
-}
-
-h1{
-  font-size: 2rem;
-  color: #303030;
+  color: #333;
 }
 
 a {
   text-decoration: underline;
   /*border-bottom: 1px solid black;*/
-  color: #555;/*#FF333E;*/
+  color: #333;/*#FF333E;*/
   -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -47,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: gray;/*#999;*/
+  color: black;/*#999;*/
   border-bottom: none;
 }
 
@@ -132,13 +129,13 @@ blockquote p {
 }
 
 .masthead a:hover {
-  color:gray;
+  color:black;
 }
 
 .masthead-title a {
   font-size: 2rem;
   text-decoration: none;
-  color: #303030;
+  color: #505050;
 }
 
 .masthead-subtitle {
@@ -210,7 +207,7 @@ blockquote p {
 }
 
 .pagination-active {
-  color: darkgray;
+  color: black;
 }
 
 .pagination-active:hover {
@@ -228,13 +225,13 @@ blockquote p {
 }
 
 .footer a {
-  color: gray;
+  color: #999;
   padding: 10px;
   text-decoration: none;
 }
 
 .footer a:hover {
-  color: #303030;
+  color: #333;
 }
 
 /*
@@ -278,10 +275,9 @@ blockquote p {
 
 pre,
 code {
-	font-size: 0.8rem;
+    font-size: 0.8rem;
     border-radius: 3px;
-    color: black;
-    background-color: lightgray;
+    background-color: #f5f5f5;
     font-family: "Source Code Pro";
 }
 
@@ -372,7 +368,7 @@ pre {
 }
 
 .fa-github:hover {
-	color: red;
+	color: #343434;
 }
 
 .fa-linkedin {
@@ -427,7 +423,6 @@ pre {
 	color: #bd081c;
 }
 
-
 .fa-medium {
   padding: 5px;
 	-o-transition:.5s;
@@ -451,22 +446,5 @@ pre {
 }
 
 .fa-codepen:hover {
-	color: darkgray;
+	color: black;
 }
-
-/* Custom */
-
-.img-fade {
-	opacity: 1;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-}
-
-.img-fade:hover {
-	opacity: 0.75;
-	
-}
-
