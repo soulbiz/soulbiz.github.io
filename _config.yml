@@ -1,6 +1,6 @@
 # Site Settings
 title:               TheSoulbiz
-tagline:             Personal blog & workspace
+tagline:             SysAdmin's Playground
 description:
 baseurl:             #"/"
 url:                 #"https://soulbiz.github.io"
@@ -12,6 +12,7 @@ author:
   twitter:           "linux"
   instagram:         "soulbiz"
   github:            "soulbiz"
+  docker:            "soulbiz"
   linkedin:          "omar-asensio-romeu-0251566a"
 navigation:
 - title: Posts
@@ -20,6 +21,8 @@ navigation:
   url: /about
 - title: Contact
   url: /contact
+- title: Projects
+  url: /projects
 
 paginate:            5
 disqus:              #"your-disqus"

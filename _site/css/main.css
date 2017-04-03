@@ -143,6 +143,7 @@ blockquote p {
 
 .masthead-subtitle {
   color: #999;
+  padding-left: 0.5rem;
 }
 
 /*
@@ -261,7 +262,7 @@ blockquote p {
 }
 
 .social-icons a {
-  color: #999;
+  color: #777;
   font-size: 1rem;
 }
 
@@ -456,6 +457,23 @@ pre {
 
 /* Custom */
 
+.img-head {
+	padding: 5px;
+	vertical-align: middle;
+	width: 15%;
+	height: auto;
+	border: 1px solid #DDD;
+	border-radius: 70%;
+	
+	-webkit-filter: grayscale(25%);
+	filter: grayscale(2%);
+}
+
+.img-fade:hover {
+	opacity: 0.75;
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 .img-fade {
 	opacity: 1;
 	-o-transition:.5s;
@@ -470,3 +488,33 @@ pre {
 	
 }
 
+.fa-docker {
+  padding: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+  
+}
+
+.fa-docker:hover {
+	-webkit-filter: sepia(100%);
+	filter: sepia(150%);
+}
+
+.postlist{
+	padding: 10px;
+	border-radius: 10px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+
+}
+
+.postlist:hover {
+	background-color: #FFF0F5;
+	box-shadow: 0px 0px 10px 10px #FFF0F5;
+}
