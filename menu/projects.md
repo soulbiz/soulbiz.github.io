@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Contact
+title: Projects
 ---
 
-For any questions or suggestions, feel free to:
+Here I'll be uploading my projects!
 
-* [File a GitHub issue](https://github.com/soulbiz/soulbiz.github.io/issues/new).
+They may include:
 
-* [Send me a mail](mailto:thesoulbiz@gmail.com)
-
-* [Call me](tel:+00000000000)
+* How-To's
+* Docker images
+* Cute cat pics
