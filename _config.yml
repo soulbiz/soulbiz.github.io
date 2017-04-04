@@ -23,9 +23,12 @@ navigation:
   url: /contact
 - title: Projects
   url: /projects
+- title: Friends
+  url: /friends
+
 
 paginate:            5
-disqus:              #"your-disqus"
+disqus:              soulbiz
 
 # Build settings
 markdown:            kramdown
