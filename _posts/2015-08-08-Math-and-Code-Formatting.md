@@ -2,7 +2,7 @@
 layout: post
 title: "Math and Code Formatting"
 categories: journal
-tags: [documentation,sample]
+tags: [documentation,formatting]
 image:
   feature: sewing.jpg
   teaser: sewing-teaser.jpg

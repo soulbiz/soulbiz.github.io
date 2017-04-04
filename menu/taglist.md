@@ -3,8 +3,8 @@ layout: page
 title: Tags
 ---
 
-<div class="tags-main">
-  <div class="tags-expo-list">
+<div>
+  <div class="tags-full-list">
     {% for tag in site.tags %}
 		<a href="/menu/taglist#{{ tag[0] | slugify }}" class="simple-tag">
 			<i class="fa fa-tag" aria-hidden="true">
@@ -18,7 +18,7 @@ title: Tags
     {% for tag in site.tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     
-    <ul class="tags-expo-posts">
+    <ul>
       {% for post in tag[1] %}
         <a class="tag-post" href="{{ site.baseurl }}{{ post.url }}">
 		  <li>

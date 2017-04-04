@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing TheSoulbiz"
 categories: journal
-tags: [documentation,welcome]
+tags: [welcome,soulbiz]
 image:
   feature: soulbiz.jpg
   teaser: absolution.jpg

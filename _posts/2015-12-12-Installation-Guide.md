@@ -2,7 +2,7 @@
 layout: post
 title: "Installation Guide"
 categories: journal
-tags: [documentation,sample]
+tags: [documentation,sample,guide]
 image:
   feature: computer.jpg
   teaser: computer-teaser.jpg

@@ -37,7 +37,6 @@ h1{
 
 a {
   text-decoration: underline;
-  /*border-bottom: 1px solid black;*/
   color: #555;/*#FF333E;*/
   -o-transition:.5s;
     -ms-transition:.5s;
@@ -513,19 +512,30 @@ pre {
 	opacity: 0.75;
 	
 }
-.postlist{
-	padding: 10px;
+.postlist {
 	border-radius: 10px;
 	-o-transition:.5s;
   	-ms-transition:.5s;
   	-moz-transition:.5s;
   	-webkit-transition:.5s;
   	transition: .5s;
+  	background-color: #FFF0F5;
 }
 
 .postlist:hover {
 	background-color: #FFF0F5;
 	box-shadow: 0px 0px 10px 10px #FFF0F5;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.postlist-link {
+  	text-decoration: none;
+}
+
+.postlist-link li {
+  	padding-left: 2rem;
+  	padding-top: 2rem;
 }
 
 /* Personal Card info (About) */
@@ -580,13 +590,16 @@ pre {
 .in-post-taglist li{
 	display: inline;
 	list-style-type: none;
-	padding: 5px;
 	color: gray;
 	text-align: center;
 }
 
 .in-post-taglist {
 	padding-bottom: 1rem;
+}
+
+.tags-full-list{
+	margin-bottom: 1rem;
 }
 
 .fa-tag {
@@ -597,6 +610,7 @@ pre {
 	border-radius: 4px;
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     text-decoration:none;
+    margin: 0.3rem;
     
     -webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
@@ -614,7 +628,8 @@ pre {
 }
 
 .tags-postlist{
-	
+	border-top: 1px solid #eee;
+	padding-top: 1rem;
 }
 
 .tag-post {

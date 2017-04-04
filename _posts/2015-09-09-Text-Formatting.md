@@ -2,7 +2,7 @@
 layout: post
 title: "Text Formatting"
 categories: journal
-tags: [documentation,sample]
+tags: [documentation,markdown,formatting]
 image:
   feature: spools.jpg
   teaser: spools-teaser.jpg
