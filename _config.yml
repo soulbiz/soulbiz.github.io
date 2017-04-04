@@ -9,7 +9,7 @@ github:
 author:
   name:              "Omar Asensio"
   email:             "thesoulbiz@gmail.com"
-  twitter:           "linux"
+  twitter:           #"linux"
   instagram:         "soulbiz"
   github:            "soulbiz"
   docker:            "soulbiz"
@@ -25,7 +25,6 @@ navigation:
   url: /projects
 - title: Friends
   url: /friends
-
 
 paginate:            5
 disqus:              soulbiz

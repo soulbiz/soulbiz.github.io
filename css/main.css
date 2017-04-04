@@ -373,7 +373,7 @@ pre {
 }
 
 .fa-github:hover {
-	color: red;
+	color: black;
 }
 
 .fa-linkedin {
@@ -455,7 +455,17 @@ pre {
 	color: darkgray;
 }
 
-/* Custom */
+/*--------------------------------------------------------------------*/
+
+/* Custom CSS*/
+
+/*--------------------------------------------------------------------*/
+
+.social-icon svg {
+
+	fill: #777;
+
+}
 
 .img-head {
 	padding: 5px;
@@ -488,8 +498,11 @@ pre {
 	
 }
 
-.fa-docker {
-  padding: 5px;
+.fa-docker svg {
+	
+  width: 19px;
+  height: auto;
+  padding-left: 5px;
 	-o-transition:.5s;
   	-ms-transition:.5s;
   	-moz-transition:.5s;
@@ -498,9 +511,10 @@ pre {
   
 }
 
-.fa-docker:hover {
-	-webkit-filter: sepia(100%);
-	filter: sepia(150%);
+.fa-docker svg:hover {
+	
+	fill: #00BFFF;
+	
 }
 
 .postlist{
@@ -568,5 +582,13 @@ pre {
     color: grey;
 }
 
-
+.taglist li{
+	display: inline;
+	list-style-type: none;
+	padding: 5px;
+	color: gray;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 2px #FFF0F5;
+}
 
