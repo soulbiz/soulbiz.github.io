@@ -25,6 +25,8 @@ navigation:
   url: /projects
 - title: Friends
   url: /friends
+- title: Tags
+  url: /taglist
 
 paginate:            5
 disqus:              soulbiz

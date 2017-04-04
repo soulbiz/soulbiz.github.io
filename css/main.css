@@ -166,6 +166,8 @@ blockquote p {
   color: #9a9a9a;
   font-family: 'Quattrocento Sans', sans-serif;
   font-size:0.8rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 30rem) {
@@ -175,6 +177,8 @@ blockquote p {
 }
 
 .related {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -461,10 +465,22 @@ pre {
 
 /*--------------------------------------------------------------------*/
 
+
 .social-icon svg {
-
 	fill: #777;
+	width: 19px;
+	height: auto;
+	
+	padding-left: 5px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	transition: .5s;
+}
 
+.fa-docker svg:hover {
+	fill: #00BFFF;
 }
 
 .img-head {
@@ -497,26 +513,6 @@ pre {
 	opacity: 0.75;
 	
 }
-
-.fa-docker svg {
-	
-  width: 19px;
-  height: auto;
-  padding-left: 5px;
-	-o-transition:.5s;
-  	-ms-transition:.5s;
-  	-moz-transition:.5s;
-  	-webkit-transition:.5s;
-  	transition: .5s;
-  
-}
-
-.fa-docker svg:hover {
-	
-	fill: #00BFFF;
-	
-}
-
 .postlist{
 	padding: 10px;
 	border-radius: 10px;
@@ -525,7 +521,6 @@ pre {
   	-moz-transition:.5s;
   	-webkit-transition:.5s;
   	transition: .5s;
-
 }
 
 .postlist:hover {
@@ -542,7 +537,8 @@ pre {
     padding: 0 8px;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
+/* Display the columns below each other 
+ * instead of side by side on small screens */
 @media (max-width: 650px) {
     .card-column {
         width: 100%;
@@ -550,7 +546,7 @@ pre {
     }
 }
 
-/* Add some shadows to create a card effect */
+/* Shadows to create card effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -566,7 +562,6 @@ pre {
 	box-shadow: 0px 0px 10px 10px #FFF0F5;
 }
 
-/* Some left and right padding inside the container */
 .card-container {
     padding: 0 16px;
 }
@@ -582,13 +577,55 @@ pre {
     color: grey;
 }
 
-.taglist li{
+.in-post-taglist li{
 	display: inline;
 	list-style-type: none;
 	padding: 5px;
 	color: gray;
 	text-align: center;
-	border-radius: 10px;
-	box-shadow: 0px 0px 5px 2px #FFF0F5;
 }
 
+.in-post-taglist {
+	padding-bottom: 1rem;
+}
+
+.fa-tag {
+	padding: 5px;
+	color: #6a9fb5;
+	background: rgba(106, 156, 177, 0.2);
+	text-align: center;
+	border-radius: 4px;
+	padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    text-decoration:none;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.fa-tag:hover {
+	background: #6a9fb5;
+	color: #fff;
+}
+
+.simple-tag {
+	text-decoration: none;
+	padding: 0.2rem;
+}
+
+.tags-postlist{
+	
+}
+
+.tag-post {
+	list-style-type: circle;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.tag-post li:hover {
+	list-style-type: disc;
+    padding-left: 0.5rem;
+	
+}
