@@ -4,8 +4,9 @@ title: Tags
 ---
 
 <div>
+  {% assign sorted-tags = site.tags | sort %}
   <div class="tags-full-list">
-    {% for tag in site.tags %}
+    {% for tag in sorted-tags %}
 		<a href="/menu/taglist#{{ tag[0] | slugify }}" class="simple-tag">
 			<i class="fa fa-tag" aria-hidden="true">
 				{{ tag[0] }}
@@ -15,7 +16,7 @@ title: Tags
   </div>
 
   <div class="tags-postlist">
-    {% for tag in site.tags %}
+    {% for tag in sorted-tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     
     <ul>
