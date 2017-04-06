@@ -600,7 +600,16 @@ pre {
 
 .tags-full-list{
 	margin-bottom: 1rem;
+	text-align: center;
 }
+
+.tag-cloud{
+	margin: 2rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	text-align: center;
+}
+
 
 .fa-tag {
 	padding: 5px;
@@ -644,3 +653,10 @@ pre {
     padding-left: 0.5rem;
 	
 }
+
+.site-tag a {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+

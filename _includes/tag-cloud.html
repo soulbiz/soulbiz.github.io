@@ -1,0 +1,11 @@
+<div class="tag-cloud">
+      {% for tag in site.tags %}
+		<a href="#{{ tag[0] | slugify }}" class="simple-tag"
+		style="font-size: {{ tag | last | size  |  times: 30 | plus: 70  }}%">
+			<i class="fa fa-tag" aria-hidden="true">
+				{{ tag[0] }}
+			</i>
+		</a>
+    {% endfor %}
+  
+  </div>

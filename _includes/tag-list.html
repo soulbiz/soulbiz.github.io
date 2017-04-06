@@ -1,0 +1,10 @@
+{% assign sorted-tags = site.tags | sort %}
+  <div class="tags-full-list">
+    {% for tag in sorted-tags %}
+		<a href="#{{ tag[0] | slugify }}" class="simple-tag">
+			<i class="fa fa-tag" aria-hidden="true">
+				{{ tag[0] }}
+			</i>
+		</a>
+    {% endfor %}
+  </div>

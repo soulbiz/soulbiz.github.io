@@ -5,7 +5,7 @@
 
   <title>
     
-      Working With Jekyll | TheSoulbiz
+      How To TagCloud | TheSoulbiz
     
   </title>
 
@@ -96,60 +96,61 @@ xmlns="http://www.w3.org/2000/svg"><g><path d="M3.757
 
     <div class="post-container">
       <h1>
-  Working With Jekyll
+  How To TagCloud
 </h1>
 
 
-  <img src="/images/bag.jpg">
+  <img src="/images/tagcloud.jpg">
 
 
-<h3 id="posts">Posts</h3>
+<h2 id="tag-cloud">Tag-Cloud</h2>
 
-<p>You will find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>El nostre fragment de codi per generar la tag-cloud segueix els 
+següents passos:</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts.</p>
+<h3 id="1-iterem-per-tots-els-tags-de-sitetags">1. Iterem per tots els <code class="highlighter-rouge">tags</code> de <code class="highlighter-rouge">site.tags</code>:</h3>
 
-<h3 id="configuration">Configuration</h3>
+<p>Aquí és on agafarem tots els tags dels Front-Matter dels posts.</p>
 
-<p>To change site settings, edit the <code class="highlighter-rouge">_config.yml</code> file found in the root of your repository. Anything under ‘Site Settings’ can be tweaked to your liking.</p>
+<h3 id="2-processem-els-tags-dins-delements-a-enllaços">2. Processem els tags dins d’elements <code class="highlighter-rouge">&lt;a&gt;</code> (enllaços):</h3>
 
-<p>If you are hosting your site on GitHub Pages, then committing a change to the <code class="highlighter-rouge">_config.yml</code> file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run <code class="highlighter-rouge">jekyll serve</code> again for the changes to take place.</p>
+<p>Aquí és on aprofitem per generar la url corresponent per cada “tag”.
+	En aquest cas redirigim al propi “index” de tags que tindrem a la
+	pròpia pàgina actual.</p>
 
-<p>In the <code class="highlighter-rouge">_config.yml</code> file, you’ll be able to change the title of your site along with any tagline you want, which shows up in the site header, as well as the description of your site for SEO purposes. You can also change the social media information, and add your own social media icons.</p>
+<h3 id="3-dins-lenllaç-definim-lestil-tamany-de-presentació-corresponent">3. Dins l’enllaç, definim l’estil (tamany) de presentació corresponent.</h3>
 
-<h3 id="everything-else">Everything Else</h3>
+<p>Per fer-ho relatiu al número de posts amb aquest tag,
+	en aquest cas multipliquem el número de posts per 30
+	i sumem aquest número al percentatge base que establirem
+	pel <code class="highlighter-rouge">font-size</code>.</p>
 
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>D’aquesta forma obtindriem:</p>
+
+<p>Un “tag” amb 4 posts:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>	(4*30)+70 = **190%** de font-size.
+</code></pre>
+</div>
+
+<h3 id="4-per-acabar-destilitzar-podem-aplicar-un-estil-css-adient">4. Per acabar d’estilitzar, podem aplicar un estil CSS adient!</h3>
+
+<p>En aquest cas faig servir l’icona de “tag” de “fontawesome.io/”
+	inclosa en el seu CSS, amb un estil afegit personalitzat.</p>
 
 
 
 <span class="post-date">
   Written on
   
-  November
-  11th,
-  2015
+  April
+  6th,
+  2017
   by Omar Asensio
 </span>
 
 <h4>Tags:</h4>
 <ul class="in-post-taglist">
-
-  <li>
-    <a href="/menu/taglist#documentation" class="simple-tag">
-		<i class="fa fa-tag" aria-hidden="true">
-			documentation
-		</i>
-	</a>
-  </li>
-
-  <li>
-    <a href="/menu/taglist#sample" class="simple-tag">
-		<i class="fa fa-tag" aria-hidden="true">
-			sample
-		</i>
-	</a>
-  </li>
 
   <li>
     <a href="/menu/taglist#jekyll" class="simple-tag">
@@ -159,13 +160,37 @@ xmlns="http://www.w3.org/2000/svg"><g><path d="M3.757
 	</a>
   </li>
 
+  <li>
+    <a href="/menu/taglist#guide" class="simple-tag">
+		<i class="fa fa-tag" aria-hidden="true">
+			guide
+		</i>
+	</a>
+  </li>
+
+  <li>
+    <a href="/menu/taglist#tagcloud" class="simple-tag">
+		<i class="fa fa-tag" aria-hidden="true">
+			tagcloud
+		</i>
+	</a>
+  </li>
+
+  <li>
+    <a href="/menu/taglist#howto" class="simple-tag">
+		<i class="fa fa-tag" aria-hidden="true">
+			howto
+		</i>
+	</a>
+  </li>
+
 </ul>
 
 
 <!-- <div class="post-date">Feel free to share!</div>
   <div class="sharing-icons">
-    <a href="https://twitter.com/intent/tweet?text=Working With Jekyll&amp;url=/journal/Working-With-Jekyll.html&amp;via=" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="https://plus.google.com/share?url=/journal/Working-With-Jekyll.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/intent/tweet?text=How To TagCloud&amp;url=/howtos/How-to-cloudtag.html&amp;via=" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://plus.google.com/share?url=/howtos/How-to-cloudtag.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
   </div>
 </div>
  -->
@@ -174,6 +199,27 @@ xmlns="http://www.w3.org/2000/svg"><g><path d="M3.757
   
   <ul class="related-posts">
     
+      
+        
+        
+      
+        
+          <li>
+            <h3>
+              <a href="/journal/Working-With-Jekyll.html">
+                Working With Jekyll
+                <!--<img src="http://localhost:4000/images/bag-teaser.jpg">-->
+                <!--<small>November 11, 2015</small>-->
+              </a>
+            </h3>
+          </li>
+          
+        
+      
+    
+      
+        
+        
       
         
           <li>
@@ -188,47 +234,12 @@ xmlns="http://www.w3.org/2000/svg"><g><path d="M3.757
           
         
       
-        
-        
-      
-        
-          <li>
-            <h3>
-              <a href="/journal/Working-With-Lagrange.html">
-                Working With Lagrange
-                <!--<img src="http://localhost:4000/images/room-teaser.jpg">-->
-                <!--<small>October 10, 2015</small>-->
-              </a>
-            </h3>
-          </li>
-          
-        
-      
     
       
         
         
       
-        
-        
-      
-        
-        
-      
     
-      
-        
-          <li>
-            <h3>
-              <a href="/howtos/How-to-cloudtag.html">
-                How To TagCloud
-                <!--<img src="http://localhost:4000/images/tagcloud.jpg">-->
-                <!--<small>April 6, 2017</small>-->
-              </a>
-            </h3>
-          </li>
-          
-        
       
         
         

@@ -27,6 +27,8 @@ navigation:
   url: /friends
 - title: Tags
   url: /taglist
+- title: Tag-Cloud
+  url: /tagcloud
 
 paginate:            5
 disqus:              soulbiz

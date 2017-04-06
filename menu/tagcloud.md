@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Tags
+title: TagCloud
 ---
 
 <div>
+  {% include tag-cloud.html %}
   
-  {% include tag-list.html %}
-
+  {% assign sorted-tags = site.tags | sort %}
+  
   <div class="tags-postlist">
     {% for tag in sorted-tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
