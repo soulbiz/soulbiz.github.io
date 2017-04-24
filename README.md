@@ -1,9 +1,10 @@
 # TheSoulbiz
 
 TheSoulbiz is a simple blog to share and explore some new & old technologies and (hopefully) some helpful tricks!
-It is based on the [Lagrange](https://lenpaul.github.io/Lagrange/) layout.
 
-![alt text](images/demo.jpg "Lagrange Demo Image")
+It is based on the [Lagrange](https://github.com/LeNPaul/Lagrange) layout.
+
+![alt text](images/demo.png "TheSoulbiz Demo Image")
 
 ### Added
 
