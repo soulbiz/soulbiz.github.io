@@ -8,7 +8,7 @@ image:
   teaser: absolution.jpg
 ---
 
-TheSoulbiz is a minimalist Jekyll page. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
+TheSoulbiz is a minimalist Jekyll page. This page is based on the Lagrange theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
 
 ### Getting Started
 

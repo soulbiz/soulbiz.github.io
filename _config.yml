@@ -21,8 +21,6 @@ navigation:
   url: /about
 - title: Contact
   url: /contact
-- title: Projects
-  url: /projects
 - title: Friends
   url: /friends
 - title: Tags
